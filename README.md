@@ -1,10 +1,16 @@
 # easyMenu
 easyMenu is a component to help developers to add menus easily in Cocos Creator
 
+![image](https://github.com/iwae/easyMenu/assets/26038745/80b44753-5222-4223-840e-d7141c8fccaa)
+
+it presets few functions for 2d/3d game tests.
+
+
 ## how to use 
 copy easyMenu to your project, and add EasyMenu to the Canvas
 
 ![image](https://github.com/iwae/easyMenu/assets/26038745/f65c65b1-df16-4014-b64f-3ad579a60041)
+
 
 
 ## add group
