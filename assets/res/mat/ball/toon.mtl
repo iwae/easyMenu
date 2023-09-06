@@ -1,0 +1,118 @@
+{
+  "__type__": "cc.Material",
+  "_name": "",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "1548e45b-4156-4e88-aa36-e2c27ca0789d",
+    "__expectedType__": "cc.EffectAsset"
+  },
+  "_techIdx": 0,
+  "_defines": [
+    {
+      "USE_OUTLINE_PASS": true
+    },
+    {
+      "USE_NORMAL_MAP": true,
+      "USE_RIM_LIGHT": true,
+      "USE_ALBEDO_MAP": true
+    },
+    {},
+    {},
+    {}
+  ],
+  "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    }
+  ],
+  "_props": [
+    {
+      "lineWidth": 35.1,
+      "baseColor": {
+        "__type__": "cc.Color",
+        "r": 185,
+        "g": 195,
+        "b": 255,
+        "a": 255
+      }
+    },
+    {
+      "mainTexture": {
+        "__uuid__": "72f3b448-90e1-4cd4-b1f1-2fb75922aa74@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "mainColor": {
+        "__type__": "cc.Color",
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "shadeStep": 0.642,
+      "baseStep": 0.47,
+      "shadeFeather": 0.032,
+      "shadeStrength": 0.648,
+      "normalMap": {
+        "__uuid__": "f0f6ff34-bd30-4d43-a22c-d675857c244e@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "normalStrength": 2,
+      "specularStep": 0.39,
+      "specularFeather": 0.079,
+      "specularStrength": 7.14,
+      "rimLightColor": {
+        "__type__": "cc.Color",
+        "r": 211,
+        "g": 184,
+        "b": 184,
+        "a": 40
+      }
+    },
+    {},
+    {},
+    {}
+  ]
+}

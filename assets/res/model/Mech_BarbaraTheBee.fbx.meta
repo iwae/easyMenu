@@ -1,0 +1,749 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946",
+  "files": [
+    "__original-animation-0.cconb",
+    "__original-animation-1.cconb",
+    "__original-animation-10.cconb",
+    "__original-animation-11.cconb",
+    "__original-animation-12.cconb",
+    "__original-animation-13.cconb",
+    "__original-animation-14.cconb",
+    "__original-animation-15.cconb",
+    "__original-animation-16.cconb",
+    "__original-animation-2.cconb",
+    "__original-animation-3.cconb",
+    "__original-animation-4.cconb",
+    "__original-animation-5.cconb",
+    "__original-animation-6.cconb",
+    "__original-animation-7.cconb",
+    "__original-animation-8.cconb",
+    "__original-animation-9.cconb"
+  ],
+  "subMetas": {
+    "62390": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@62390",
+      "displayName": "",
+      "id": "62390",
+      "name": "RobotArmature|Hello.animation",
+      "userData": {
+        "gltfIndex": 2,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.5
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "88503": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@88503",
+      "displayName": "",
+      "id": "88503",
+      "name": "RobotArmature|Shoot_Small.animation",
+      "userData": {
+        "gltfIndex": 14,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.23333333432674408
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "85e49": {
+      "importer": "gltf-mesh",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@85e49",
+      "displayName": "",
+      "id": "85e49",
+      "name": "Cylinder.036.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 6756
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a9d84": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@a9d84",
+      "displayName": "",
+      "id": "a9d84",
+      "name": "RobotArmature|Dance.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.800000011920929
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "26c11": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@26c11",
+      "displayName": "",
+      "id": "26c11",
+      "name": "RobotArmature|Death.animation",
+      "userData": {
+        "gltfIndex": 1,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.5666666626930237
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "389f7": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@389f7",
+      "displayName": "",
+      "id": "389f7",
+      "name": "RobotArmature|HitRecieve_1.animation",
+      "userData": {
+        "gltfIndex": 3,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.5333333611488342
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "385d8": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@385d8",
+      "displayName": "",
+      "id": "385d8",
+      "name": "RobotArmature|HitRecieve_2.animation",
+      "userData": {
+        "gltfIndex": 4,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.6666666865348816
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "ae5d6": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@ae5d6",
+      "displayName": "",
+      "id": "ae5d6",
+      "name": "RobotArmature|Idle.animation",
+      "userData": {
+        "gltfIndex": 5,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 3.3333332538604736
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "ae6b0": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@ae6b0",
+      "displayName": "",
+      "id": "ae6b0",
+      "name": "RobotArmature|Jump.animation",
+      "userData": {
+        "gltfIndex": 6,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.8666666746139526
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "9c466": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@9c466",
+      "displayName": "",
+      "id": "9c466",
+      "name": "RobotArmature|Jump_Landing.animation",
+      "userData": {
+        "gltfIndex": 7,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.8666666746139526
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "e65f1": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@e65f1",
+      "displayName": "",
+      "id": "e65f1",
+      "name": "RobotArmature|Jump_NoHeight.animation",
+      "userData": {
+        "gltfIndex": 8,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.6000000238418579
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "7f477": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@7f477",
+      "displayName": "",
+      "id": "7f477",
+      "name": "RobotArmature|Kick.animation",
+      "userData": {
+        "gltfIndex": 9,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.8333333134651184
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "a12ec": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@a12ec",
+      "displayName": "",
+      "id": "a12ec",
+      "name": "RobotArmature|No.animation",
+      "userData": {
+        "gltfIndex": 10,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.399999976158142
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "07886": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@07886",
+      "displayName": "",
+      "id": "07886",
+      "name": "RobotArmature|Pickup.animation",
+      "userData": {
+        "gltfIndex": 11,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.399999976158142
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "2c01c": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@2c01c",
+      "displayName": "",
+      "id": "2c01c",
+      "name": "RobotArmature|Run.animation",
+      "userData": {
+        "gltfIndex": 12,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.8333333134651184
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "d22ea": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@d22ea",
+      "displayName": "",
+      "id": "d22ea",
+      "name": "RobotArmature|Shoot_Big.animation",
+      "userData": {
+        "gltfIndex": 13,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.4000000059604645
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "fbcfd": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@fbcfd",
+      "displayName": "",
+      "id": "fbcfd",
+      "name": "RobotArmature|Walk.animation",
+      "userData": {
+        "gltfIndex": 15,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.8333333134651184
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "427bd": {
+      "importer": "gltf-animation",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@427bd",
+      "displayName": "",
+      "id": "427bd",
+      "name": "RobotArmature|Yes.animation",
+      "userData": {
+        "gltfIndex": 16,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.399999976158142
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 13
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "89a26": {
+      "importer": "gltf-material",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@89a26",
+      "displayName": "",
+      "id": "89a26",
+      "name": "Atlas.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e8b1c": {
+      "importer": "gltf-scene",
+      "uuid": "bc1b21fd-d997-4b57-a4ae-029725c6a946@e8b1c",
+      "displayName": "",
+      "id": "e8b1c",
+      "name": "Mech_BarbaraTheBee.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "RobotArmature|Dance",
+        "duration": 0.800000011920929,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Dance",
+            "from": 0,
+            "to": 0.800000011920929,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|Death",
+        "duration": 0.5666666626930237,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Death",
+            "from": 0,
+            "to": 0.5666666626930237,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|Hello",
+        "duration": 1.5,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Hello",
+            "from": 0,
+            "to": 1.5,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|HitRecieve_1",
+        "duration": 0.5333333611488342,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|HitRecieve_1",
+            "from": 0,
+            "to": 0.5333333611488342,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|HitRecieve_2",
+        "duration": 0.6666666865348816,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|HitRecieve_2",
+            "from": 0,
+            "to": 0.6666666865348816,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|Idle",
+        "duration": 3.3333332538604736,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Idle",
+            "from": 0,
+            "to": 3.3333332538604736,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|Jump",
+        "duration": 0.8666666746139526,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Jump",
+            "from": 0,
+            "to": 0.8666666746139526,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|Jump_Landing",
+        "duration": 0.8666666746139526,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Jump_Landing",
+            "from": 0,
+            "to": 0.8666666746139526,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|Jump_NoHeight",
+        "duration": 0.6000000238418579,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Jump_NoHeight",
+            "from": 0,
+            "to": 0.6000000238418579,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|Kick",
+        "duration": 0.8333333134651184,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Kick",
+            "from": 0,
+            "to": 0.8333333134651184,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|No",
+        "duration": 1.399999976158142,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|No",
+            "from": 0,
+            "to": 1.399999976158142,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|Pickup",
+        "duration": 1.399999976158142,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Pickup",
+            "from": 0,
+            "to": 1.399999976158142,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|Run",
+        "duration": 0.8333333134651184,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Run",
+            "from": 0,
+            "to": 0.8333333134651184,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|Shoot_Big",
+        "duration": 0.4000000059604645,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Shoot_Big",
+            "from": 0,
+            "to": 0.4000000059604645,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|Shoot_Small",
+        "duration": 0.23333333432674408,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Shoot_Small",
+            "from": 0,
+            "to": 0.23333333432674408,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|Walk",
+        "duration": 0.8333333134651184,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Walk",
+            "from": 0,
+            "to": 0.8333333134651184,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RobotArmature|Yes",
+        "duration": 1.399999976158142,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RobotArmature|Yes",
+            "from": 0,
+            "to": 1.399999976158142,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "bc1b21fd-d997-4b57-a4ae-029725c6a946@e8b1c",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "bc1b21fd-d997-4b57-a4ae-029725c6a946@85e49"
+      ],
+      "skeletons": [
+        "bc1b21fd-d997-4b57-a4ae-029725c6a946@438fe"
+      ],
+      "textures": [],
+      "materials": [
+        "bc1b21fd-d997-4b57-a4ae-029725c6a946@89a26"
+      ],
+      "scenes": [
+        "bc1b21fd-d997-4b57-a4ae-029725c6a946@e8b1c"
+      ]
+    },
+    "mountAllAnimationsOnPrefab": false
+  }
+}
