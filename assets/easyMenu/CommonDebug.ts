@@ -107,7 +107,7 @@ export class CommonDebug extends Component {
             const url = self.url;
             const num = Math.floor((self.width * self.height * (native.indexOf('jpg') > 0 ? 3 : 4) / 1024 / 1024) * 10000) / 10000;
             total += num;
-            output = output + "\n" + url + native + "...." + num + "M";
+            output = output + "\n" + url + "...." + num + "M";
         })
         total = Math.floor(total * 10000) / 10000;
         output = "Total Image Mem...." + total + "M" + output;
