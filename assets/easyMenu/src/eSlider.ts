@@ -43,6 +43,7 @@ export class eSlider extends Component {
 
 
     init(name: string, cb?: (progress:number)=>void, scale?:number) {
+        this.node.name = name;
         this.NameLable.string = name;
         cb && (this.callback = cb);
         scale && (this._scale = scale);

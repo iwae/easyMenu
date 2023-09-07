@@ -1,19 +1,18 @@
-import { _decorator, Color, Component, director, EventHandler, Label, Node, Sprite, sys } from 'cc';
+import { _decorator, Color, Component, game, Graphics, Label, Node, Sprite, sys, UITransform, Vec3 } from 'cc';
 const { ccclass, property, executeInEditMode } = _decorator;
 const tempC_1 = new Color()
+const tempVec3 = new Vec3();
 
-@ccclass('Easy List')
-export class eList extends Component {
-    @property(Node)
-    TouchArea:Node = null;
+@ccclass('Easy Graph')
+export class eGraph extends Component {
     @property(Sprite)
     BgSprite: Sprite = null;
     @property(Sprite)
     SideSprite: Sprite = null;
     @property(Label)
     NameLable: Label = null;
-    @property(Label)
-    ListLabel: Label = null;
+    @property(Graphics)
+    LineGraph: Graphics = null;
     @property(Color)
     set MenuItemBgColor(v) {
         this.BgColor = v;
@@ -37,25 +36,64 @@ export class eList extends Component {
 
     private pressStrenth = 0.75;
     public callback: () => string | void | number;
-    public eventData: any;
+    positions:any[]=[];
+    _x = 100;
+    _y = 18;
+    _points = 10;
+    _limit = 60;
 
 
-    init(name: string, cb?: () => string | void | number) {
+    updateData(data:number){
+        const length = this.positions.length;
+        if(length>= this._points){
+            this.positions.shift()
+        }
+        this.positions.push(data);
+        this.drawLine();
+    }
+
+    init(name: string, cb?: () => string | void | number,limit=60,points= 10) {
         this.node.name = name;
         this.NameLable.string = name;
         cb && (this.callback = cb);
+        const size = this.LineGraph.getComponent(UITransform);
+        this._x = size.width;
+        this._y = size.height*0.9;
+        this._limit = limit;
+        this._points = Math.max(Math.floor(points),3);
+    }
+
+    drawLine(){
+        const length = this.positions.length;
+        if(length<2) return;
+        this.LineGraph.clear();
+        const x = this._x*0.5;
+        const y = this._y*0.5;
+        const height = this._y;
+        const offset = this._x/(this._points-1); 
+        for(var i=0;i<length;i++){
+            const _y = height * this.positions[i]/this._limit-y;
+            const _x = i*offset-x;
+            if(i==0){
+                this.LineGraph.moveTo(_x, _y);
+            }else{
+
+                this.LineGraph.lineTo(_x, _y);
+            }
+        }
+        this.LineGraph.stroke();
     }
 
     onEnable() {
         this.onNormal();
-        this.TouchArea.on(Node.EventType.TOUCH_END, this.onClick, this);
+        this.node.on(Node.EventType.TOUCH_END, this.onClick, this);
         if (sys.platform = sys.Platform.DESKTOP_BROWSER) {
             this.node.on(Node.EventType.MOUSE_ENTER, this.onPress, this);
             this.node.on(Node.EventType.MOUSE_LEAVE, this.onNormal, this);
         }
     }
     onDisable() {
-        this.TouchArea.off(Node.EventType.TOUCH_END, this.onClick, this);
+        this.node.off(Node.EventType.TOUCH_END, this.onClick, this);
         if (sys.platform = sys.Platform.DESKTOP_BROWSER) {
             this.node.off(Node.EventType.MOUSE_ENTER, this.onPress, this);
             this.node.off(Node.EventType.MOUSE_LEAVE, this.onNormal, this);
@@ -76,10 +114,11 @@ export class eList extends Component {
         if (!this.callback) return;
         const result = this.callback();
         if (result) {
-            this.ListLabel.string = String(result) || this.ListLabel.string;
+            this.NameLable.string = String(result) || this.NameLable.string;
         }
     }
 
+  
 }
 
 

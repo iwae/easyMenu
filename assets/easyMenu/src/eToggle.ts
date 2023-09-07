@@ -40,6 +40,7 @@ export class eToggle extends Component {
 
 
     init(name: string,cb?: (bool:boolean)=>void) {
+        this.node.name = name;
         this.NameLable.string = name;
         cb && (this.callback = cb);
     }

@@ -38,6 +38,7 @@ export class eItem extends Component {
 
 
     init(name: string, cb?: () => string | void | number) {
+        this.node.name = name;
         this.NameLable.string = name;
         cb && (this.callback = cb);
     }

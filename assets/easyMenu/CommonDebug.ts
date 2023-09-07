@@ -1,6 +1,7 @@
 import { _decorator, assetManager, Canvas, Component, DirectionalLight, director, game, ImageAsset, Material, Node, profiler, Sprite } from 'cc';
 import { eMenu } from './src/eMenu';
 import { TimeScale } from './TimeScale';
+import { eGraph } from './src/eGraph';
 const { ccclass, property } = _decorator;
 
 @ccclass('CommonDebug')
@@ -11,6 +12,7 @@ export class CommonDebug extends Component {
     canvasNode: Node = null;
     overdrawMode = false;
     menu: eMenu = null;
+    graph: eGraph;
 
     start() {
         this.canvasNode = director.getScene().getComponentInChildren(Canvas).node;
@@ -41,16 +43,22 @@ export class CommonDebug extends Component {
 
     addDebug() {
         if (!this.menu) return;
-        profiler.showStats();
-        this.menu.addGroup("Debug")
+        const Debug = this.menu.addGroup("Debug")
+
+        if(profiler){
+            profiler.showStats();
+            Debug
             .addToggle("Profiler", (t) => {
                 t ? profiler.showStats() : profiler.hideStats();
             })
+        }
+
+        Debug
             .addSlider("Scale", (v: number) => {
                 TimeScale.scale = v;
             }, 1)
             .addItem("Game Time", () => {
-                return "GameTime: " + Math.floor(game.totalTime) + " ms";
+                return "Game Time: " + Math.floor(game.totalTime) + " ms";
             })
             .addToggle("High FPS", (t) => {
                 game.frameRate = t ? 60 : 30;
@@ -60,8 +68,24 @@ export class CommonDebug extends Component {
             )
             .addList("Image Memory",
                 this.getImageMemory.bind(this)
-            )
+            ).addGraph("FPS", null, 60, 14);
 
+        this.graph = Debug.node.getChildByName("FPS").getComponent(eGraph);
+
+        this.graph.callback = (() => {
+            const output = this.graph.positions.toString();
+            console.log("FPS History", output)
+            this.copyToClipboard(output);
+        })
+
+    }
+    copyToClipboard(output) {
+        try {
+            navigator.clipboard.writeText(output);
+            console.log('Output copied to clipboard');
+        } catch (err) {
+            console.log('Failed to copy: ', err);
+        }
     }
     getImageMemory(): string {
         const assets = assetManager.assets;
@@ -80,20 +104,15 @@ export class CommonDebug extends Component {
         images.forEach((image, i) => {
             const self = image;
             const native = self._native;
-            const uuid = self.uuid;
+            const url = self.url;
             const num = Math.floor((self.width * self.height * (native.indexOf('jpg') > 0 ? 3 : 4) / 1024 / 1024) * 10000) / 10000;
             total += num;
-            output = output + "\n" + uuid + native + "...." + num + "M";
+            output = output + "\n" + url + native + "...." + num + "M";
         })
         total = Math.floor(total * 10000) / 10000;
         output = "Total Image Mem...." + total + "M" + output;
         console.log("Image Mem==", output)
-        try {
-            navigator.clipboard.writeText(output);
-            console.log('Output copied to clipboard');
-        } catch (err) {
-            console.log('Failed to copy: ', err);
-        }
+        this.copyToClipboard(output);
         return output;
     }
 
@@ -123,6 +142,22 @@ export class CommonDebug extends Component {
                 light.illuminance = p * 100000
             }, lightScale)
     }
+
+    time = 0;
+    counter = 0;
+    update(dt) {
+        this.counter += 1;
+        this.time += dt;
+        if (this.time >= 1) {
+            const graph = this.graph;
+            if (!graph) return;
+            graph.updateData(this.counter)
+            this.time -= 1;
+            graph.NameLable.string = "FPS: " + this.counter;
+            this.counter = 0;
+        }
+    }
+
 
 
 

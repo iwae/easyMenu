@@ -41,6 +41,7 @@ export class eEdit extends Component {
 
 
     init(name: string, editstring:any, cb?: (input:string)=>void) {
+        this.node.name = name;
         this.NameLable.string = name;
         this.editbox.string  = editstring;
         cb && (this.callback = cb);
