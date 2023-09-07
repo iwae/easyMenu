@@ -5,6 +5,9 @@ easyMenu is a component to help developers to add menus easily in Cocos Creator
 
 it presets few functions for 2d/3d game tests.
 
+### FPS Monitor
+![122](https://github.com/iwae/easyMenu/assets/26038745/d39d5829-45d1-45ad-9e7d-effec50bf63b)
+
 
 ## how to use 
 copy easyMenu to your project, and add EasyMenu to the Canvas
@@ -58,6 +61,18 @@ copy easyMenu to your project, and add EasyMenu to the Canvas
      group.addEdit("edit", "default",((input:string)=>{
 
      });
+```
+## add graph
+``` typescript
+    group.addGraph("FPS", null, 60, 14);
+
+    this.graph = group.node.getChildByName("FPS").getComponent(eGraph);
+
+    this.graph.callback = (() => {
+        const output = this.graph.positions.toString();
+        console.log("FPS History", output)
+        this.copyToClipboard(output);
+    })
 ```
 ## add multi items
 ``` typescript
