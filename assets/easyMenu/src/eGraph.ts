@@ -72,7 +72,8 @@ export class eGraph extends Component {
         const height = this._y;
         const offset = this._x/(this._points-1); 
         for(var i=0;i<length;i++){
-            const _y = height * this.positions[i]/this._limit-y;
+            const scale = Math.max(this.positions[i]/this._limit);
+            const _y = height *scale-y;
             const _x = i*offset-x;
             if(i==0){
                 this.LineGraph.moveTo(_x, _y);
