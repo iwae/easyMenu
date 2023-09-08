@@ -8,12 +8,17 @@ it presets few functions for 2d/3d game tests.
 ### FPS Monitor
 ![122](https://github.com/iwae/easyMenu/assets/26038745/d39d5829-45d1-45ad-9e7d-effec50bf63b)
 
+### Time Scale
+![133](https://github.com/iwae/easyMenu/assets/26038745/6c84889d-7c37-49df-b4f4-db167e9d0b88)
+
+### Overdraw Debug
+
+![image](https://github.com/iwae/easyMenu/assets/26038745/446e4c69-2c30-4522-8ce2-d35afe37da3c)
 
 ## how to use 
 copy easyMenu to your project, and add EasyMenu to the Canvas
 
 ![image](https://github.com/iwae/easyMenu/assets/26038745/f65c65b1-df16-4014-b64f-3ad579a60041)
-
 
 
 ## add group
