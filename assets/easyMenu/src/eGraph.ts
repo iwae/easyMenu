@@ -58,7 +58,7 @@ export class eGraph extends Component {
         cb && (this.callback = cb);
         const size = this.LineGraph.getComponent(UITransform);
         this._x = size.width;
-        this._y = size.height*0.9;
+        this._y = size.height*0.85;
         this._limit = limit;
         this._points = Math.max(Math.floor(points),3);
     }
@@ -72,7 +72,7 @@ export class eGraph extends Component {
         const height = this._y;
         const offset = this._x/(this._points-1); 
         for(var i=0;i<length;i++){
-            const scale = Math.max(this.positions[i]/this._limit);
+            const scale = Math.min(this.positions[i]/this._limit,1.05);
             const _y = height *scale-y;
             const _x = i*offset-x;
             if(i==0){

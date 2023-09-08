@@ -1,4 +1,4 @@
-import { _decorator, assetManager, Canvas, Component, DirectionalLight, director, game, ImageAsset, Material, Node, profiler, Sprite } from 'cc';
+import { _decorator, assetManager, Canvas, cclegacy, Component, DirectionalLight, director, game, ImageAsset, Material, Node, profiler, Sprite } from 'cc';
 import { eMenu } from './src/eMenu';
 import { TimeScale } from './TimeScale';
 import { eGraph } from './src/eGraph';
@@ -13,6 +13,7 @@ export class CommonDebug extends Component {
     overdrawMode = false;
     menu: eMenu = null;
     graph: eGraph;
+    Batcher2D:any
 
     start() {
         this.canvasNode = director.getScene().getComponentInChildren(Canvas).node;
@@ -24,10 +25,10 @@ export class CommonDebug extends Component {
     testOverdraw() {
         this.overdrawMode = !this.overdrawMode;
         const children = this.canvasNode.children;
+        const material: Material = this.overdrawMode ? this.overdrawMat : this.defaultMaterial;
         children.forEach((child) => {
             if (child == this.menu.node) return;
             const sprites = child.getComponentsInChildren(Sprite);
-            const material: Material = this.overdrawMode ? this.overdrawMat : this.defaultMaterial;
             sprites.forEach((sprite) => {
                 if (!this.defaultMaterial) {
                     this.defaultMaterial = new Material();
